@@ -5795,7 +5795,20 @@ h6 {
 
 
 
+.slider {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+}
 
 
 .sp-only .slider {
@@ -5804,7 +5817,7 @@ h6 {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   width: 100vw;
-  height: 690px;
+  height: auto;
 }
 
 .sp-only .slide {
@@ -5817,12 +5830,6 @@ h6 {
   overflow: hidden;
 }
 
-.sp-only .slide img {
-  width: 100%;
-  height: 690px;
-  object-fit: cover;
-  /* coverで画像引き伸ばしを防ぐ */
-}
 
 
 
