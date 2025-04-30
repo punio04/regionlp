@@ -5884,7 +5884,7 @@ h6 {
     align-content: center;
     align-items: flex-start;
     padding-top: 8px;
-    height: 525px;
+    height: 100%;
   }
 
   .wrapper724 {
@@ -5976,25 +5976,27 @@ h6 {
 
   .slider-container {
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    width: 100vw;
-    height: calc(100vh - 110px);
-    /* CTAの高さ分引く */
-    scroll-behavior: smooth;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      width: 100vw;
+      height: auto;
+      /* Safari対策：高さは画像に任せるか後述の比率で調整 */
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
   }
 
   .slide {
     flex: 0 0 100vw;
-    height: 100%;
-    scroll-snap-align: start;
-    position: relative;
+      scroll-snap-align: start;
+      position: relative;
+      height: auto;
   }
 
   .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+      height: auto;
+      /* ← 切れ防止 */
+      display: block;
   }
 
   .cta-fixed {
