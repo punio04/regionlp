@@ -1278,7 +1278,7 @@ possible
   line-height: 2;
 }
 
-.possible h2 {
+.possible h1 {
   text-align: center;
   margin: 2vh auto;
   color: #ffffff;
@@ -1370,7 +1370,7 @@ possible
     padding: 12vw 0;
   }
 
-  .possible h2 {
+  .possible h1 {
     text-align: center;
     margin: 0px auto;
     color: var(--main_color);
@@ -6169,7 +6169,7 @@ h6 {
     font-size: 38px;
   }
 
-  .possible h2 {
+  .possible h1 {
     text-align: center;
     margin: 2vh auto;
     color: #ffffff;
