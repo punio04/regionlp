@@ -5976,27 +5976,28 @@ h6 {
 
   .slider-container {
     display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      width: 100vw;
-      height: auto;
-      /* Safari対策：高さは画像に任せるか後述の比率で調整 */
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    height: auto;
+    /* Safari対策：高さは画像に任せるか後述の比率で調整 */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 
   .slide {
     flex: 0 0 100vw;
-      scroll-snap-align: start;
-      position: relative;
-      height: auto;
+    scroll-snap-align: start;
+    position: relative;
+    height: auto;
+    margin: initial;
   }
 
   .slide img {
     width: 100%;
-      height: auto;
-      /* ← 切れ防止 */
-      display: block;
+    height: auto;
+    /* ← 切れ防止 */
+    display: block;
   }
 
   .cta-fixed {
