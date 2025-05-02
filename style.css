@@ -485,7 +485,7 @@ button:active {
 .global-menu-link {
   color: #2c3e50;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   padding: 1em 15px;
   text-decoration: none;
   letter-spacing: 1.5px;
@@ -510,7 +510,7 @@ button:active {
 @media (max-width: 1300px) {
   .global-menu-link {
     padding: 0px 10px;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: 1.1px;
   }
 
@@ -5290,7 +5290,7 @@ h6 {
 
 .flow {
   position: relative;
-  padding: 80px 0 120px;
+  padding: 120px 0 120px;
   background: #fffaf0
 }
 
@@ -5324,7 +5324,7 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .flow {
-    padding: 120px 0 160px
+    padding: 120px 0 120px
   }
 }
 
